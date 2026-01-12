@@ -6,14 +6,24 @@ public class Unit6 {
     // Instructions: Use a for-each loop to iterate through the array and calculate the sum.
     public static int sumArray(int[] array) {
         // TODO: Implement this method
-        return 0;  // Placeholder return value, replace with the correct sum.
+        int sum = 0;
+        for (int i = 0; i < array.length; i++){
+            sum += array[i];
+        }
+        return sum;
     }
 
     // 2. Implement a method that finds the maximum element in an array of integers.
     // Instructions: Iterate through the array and track the largest number found.
     public static int maxElement(int[] array) {
         // TODO: Implement this method
-        return 0;  // Placeholder return value, replace with the correct maximum element.
+        int max = 0;
+        for ( int i = 0; i < array.length; i++){
+            if (array[i] > array[i+1]){
+                max = array[i];
+            }
+        }
+        return max;
     }
 
     // 3. Implement a method that takes an array and returns a new array with the elements in reverse order.
